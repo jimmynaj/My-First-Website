@@ -1,1 +1,0 @@
-Hello world. im trying to use git from Linux terminal
