@@ -1,5 +1,3 @@
-This is Jimmy's first git project!
+This is Jimmy's first website build from scratch using basic HTML & CSS (as of now) and hosted in Amazon Web Services (AWS)
 
-Hello Odin!
-
-Im revisiting my effort of complete TOP studies, plan to release my own portfolio website by March
+I mainly use theodinproject.com to guide me through on web development skills. Currently finish with HTML and CSS curriculums- 4th March 2022.
