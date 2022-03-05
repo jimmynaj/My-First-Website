@@ -4,15 +4,15 @@
     padding: 0;
     box-sizing: border-box; /* allow to include padding and border in an element's total width and height*/
 }
-a:link{
+a:link{ /*applied to all links*/
+    color: white;
+    text-decoration: none; /*remove underline and blue colour of the default link tag*/
+}
+a:visited { /*visited or clicked link*/
     color: white;
     text-decoration: none;
 }
-a:visited {
-    color: white;
-    text-decoration: none;
-}
-.hero{
+.hero{ /*fancy name for main header or banner */
     padding: 20px;
     margin: 0 auto;
     background-color: #005F73;
@@ -20,38 +20,36 @@ a:visited {
     display: flex;
     height: 60px;
     align-items: center;
+    justify-content: center;
 }
 header{
     font-weight: 900;
     font-size: 24px;
     flex: 2;
-    justify-content: center;
+    padding-right: 70px;
 }
 ul{
     display: flex;
-    flex: 1;
-    list-style: none;
+    flex: 1 1 auto;
     padding: 10px;
     height: 60px;
     justify-content: center;
     align-items:center;
-    gap: 30px;
 }
 ul li{
     list-style: none;
-    flex-grow: 0;
+    flex-grow: 0; /* maintaining the nav button shape and not shrinking */
+    flex-shrink: 0;
     text-align:center;
-    height: max-content;
     font-size: 18px;
     font-weight: 700;
+    width: 120px;
 }
 .content1{
     display: flex;
-    padding: 100px 100px;
-    height: fit-content;
+    padding: 100px;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
 }
 .content1text{
     text-align: left;
@@ -60,10 +58,11 @@ ul li{
     padding: 50px;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 30px;
 }
 .content1text h2{
     font-size: 48px;
+    font-weight: 700;
 }
 .content1text p{
     font-size: 30px;
@@ -73,14 +72,9 @@ ul li{
     padding: 50px;
     flex-shrink: 0;
 }
-.content1imgage img{
-    max-width: 100%;
-}
-
 .content2{
     align-items: center;
     padding: 30px 100px;
-    font-size: 22px;
     color: black;
     text-align: center;
     background-color: #0A9396 ;
@@ -88,23 +82,25 @@ ul li{
     flex-direction: column;
     gap: 30px;
 }
+.content2 h2{
+    font-size: 40px;
+}
 .content2image{
     display: flex;
-    margin: 0 auto;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /*when windows shrink the flex elements will move to the next line*/
 }
 .content2image img{
-    object-fit: cover;
+    object-fit: cover; /*maintain the width and height specified below for any image given*/
     width:230px;
     height:230px;
-    border-radius: 30px;
+    border-radius: 30px; /*rounded edges*/
     border: 5px solid #001219;
 }
 .content3{
     align-items: center;
-    padding: 90px 100px;
+    padding: 90px;
     font-size: 22px;
     color: black;
     text-align: center;
@@ -123,7 +119,7 @@ ul li{
     font-size: 20px;
 }
 .content4{
-    padding: 30px 100px;
+    padding: 30px 150px;
 }
 .content4dialog{
     display: flex;
@@ -148,6 +144,5 @@ footer{
     background-color: #001219 ;
     color: white;
     padding: 20px 20px;
-    margin:auto;
     text-align: center;
 }
